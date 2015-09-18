@@ -80,7 +80,7 @@ REST stands for **REpresentational State Transfer**. We will demonstrate these p
 
 * `$ rails new bog_app -T`
 * `$ cd bog_app`
-* `rake db:create`
+* `$ rake db:create`
 * `$ rails s`
 
 Now our app is up and running, [localhost:3000](localhost:3000/). 
