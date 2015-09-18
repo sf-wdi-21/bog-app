@@ -179,9 +179,8 @@ In `/config/routes.rb`
   
 ```ruby
 RouteApp::Application.routes.draw do
-	root to: 'creautres#index'
-	## Also just to keep it RESTful
-	get '/creatures', to: "creatures#index"
+	root to: 'creatures#index' # same as `get "/" => "creatures#index"`
+	get '/creatures', to: "creatures#index" # same as `get "/creatures" => "creatures#index"`
 end
 ```
 
