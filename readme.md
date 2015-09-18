@@ -78,9 +78,10 @@ REST stands for **REpresentational State Transfer**. We will demonstrate these p
 
 ### 1.  Setup Rails New
 
-* `$ rails new bog_app -T`
+* `$ rails new bog_app -T -B -d postgresql`
 * `$ cd bog_app`
 * `$ rake db:create`
+* `$ bundle`
 * `$ rails s`
 
 Now our app is up and running, [localhost:3000](localhost:3000/). 
