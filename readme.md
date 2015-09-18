@@ -90,8 +90,18 @@ Now our app is up and running, [localhost:3000](localhost:3000/).
 Just put the third party css libraries in `vendor/assets` and for bootstrap just file it under stylesheets.
 
 ```
- curl https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css > vendor/assets/stylesheets/bootstrap-3.2.0.min.css
+ curl https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css > vendor/assets/stylesheets/bootstrap.css
 ```
+
+Require bootstrap into the application's CSS. To do this add the line `*= require bootstrap` to the file `/app/assets/stylesheets/application.css`, as such:
+
+```
+ *= require_tree .
+ *= require_self
+ *= require bootstrap
+ */
+```
+
 ### 3.  Create A Creature 
 
 
