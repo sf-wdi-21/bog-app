@@ -486,7 +486,7 @@ Rails.application.routes.draw do
 	
 	get '/creatures/:id', to: 'creatures#show'
 		
-	get '/creatures/:id/edit', to: 'creatures#show'		
+	get '/creatures/:id/edit', to: 'creatures#edit'		
 	
 	post "/creatures", to: "creatures#create"
 end
@@ -511,7 +511,7 @@ class CreaturesController < ApplicationController
 end
 ```
 
-* Let's quickly begin the setup of an `edit` form using our `new.html.erb` from earlier. To see how the form is different we will need to render it and check it out in Chrome console.
+* Let's quickly begin the setup of an `edit.html.erb` form using our `new.html.erb` from earlier as a reference. To see how the form is different we will need to render it and check it out in Chrome console.
 
 In `app/views/creatures/new.html.erb`
 
@@ -544,7 +544,7 @@ Rails.application.routes.draw do
 	
 	get '/creatures/:id', to: 'creatures#show', as: "creature"
 		
-	get '/creatures/:id/edit', to: 'creatures#show', as: "edit_creature"		
+	get '/creatures/:id/edit', to: 'creatures#edit', as: "edit_creature"		
 	
 	post "/creatures", to: "creatures#create"
 end
